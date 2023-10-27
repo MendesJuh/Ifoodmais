@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bgRed: #ff676d;
+  --border-01: #f2a0a7;
+  --border-02: #bf2c47;
+  --border-03: #8c3e3e;
+
+  /*========== Fonte ==========*/
+  --body-font: "Poppins", sans-serif;
+}
+/*
+    Header Background -> #F7F7F7
+    Logo, Restaurante -> #EA1D2C -> #CC1825
+    Mercado -> #B6D048 -> #9EB53E
+    Pet Shop -> #8C60C5
+    Farmácia -> #F9879C
+    Bebidas -> #F6D553
+*/

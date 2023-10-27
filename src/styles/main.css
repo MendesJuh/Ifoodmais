@@ -1,0 +1,420 @@
+@import url("./variables.css");
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 6rem;
+  position: fixed;
+  z-index: 1;
+}
+
+.header__logo {
+  text-decoration: none !important;
+}
+
+.header__logo span {
+  font-size: 3.2rem;
+  color: var(--bgRed);
+  font-weight: 500;
+}
+
+.header__nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 0;
+}
+
+.header__nav ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.header__nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.header__nav ul li a:hover {
+  color: #cc1825;
+}
+
+/*=============== HOME ===============*/
+.home {
+  background-color: var(--bgRed);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-title {
+  margin-bottom: 60px;
+  font-size: 9rem;
+  color: #fff;
+}
+
+.box {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.box .search-box {
+  position: relative;
+  height: 50px;
+  max-width: 50px;
+  margin: 0 auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+#check:checked ~ .search-box {
+  max-width: 380px;
+}
+
+.search-box input {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px !important;
+  background: #fff;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-size: medium;
+}
+
+.search-box .icon {
+  position: absolute;
+  right: -2px;
+  top: 0;
+  width: 50px;
+  background: #fff;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: var(--bgRed);
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#check:checked ~ .search-box .icon {
+  background: var(--bgRed);
+  color: #fff;
+  width: 60px;
+  border-radius: 0 25px 25px 0;
+}
+
+#check {
+  display: none;
+}
+
+/*=============== CARDÁPIO ===============*/
+.cardapio {
+  width: 100%;
+  margin: 3.2rem 0;
+}
+.cardapio__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.cardapio__content h2 {
+  font-size: 3.2rem;
+}
+
+.cardapio__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  row-gap: 5rem;
+}
+.cardapio__item {
+  cursor: pointer;
+  background-color: #cc1825;
+  width: 256px;
+  height: 324px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: ease-in-out 0.3s;
+  padding: 16px;
+}
+
+.cardapio__item:hover .item__img img {
+  transform: scale(1.1);
+}
+
+.item__img {
+  width: 100%;
+  height: 45%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: ease-in-out 0.5s;
+}
+
+.item__content {
+  width: 100%;
+  height: 55%;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item__title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.item__description {
+  font-size: 1.25rem;
+  text-align: justify;
+  color: #fff;
+}
+
+/*=============== RESTAURANTES ===============*/
+.restaurante__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2.5rem 0;
+}
+
+.restaurante__content h2 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.restaurante__content table {
+  font-size: 1.4rem;
+}
+
+.restaurante__content table tr td:first-child {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.restaurante__content table tr td:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+/*=============== FORMULARIO ===============*/
+
+.form-group {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.form-title{
+  font-size: 3.9rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="submit"] {
+  background-color: var(--bgRed);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: var(--bgRed);
+  border: 1px solid;
+  border-color: var(--bgRed);
+}
+
+/*=============== FOOTER ===============*/
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  font-size: 24px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For large devices */
+
+@media (min-width: 1023px) {
+  .nav {
+    height: calc(--header-height) + 2rem;
+  }
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 4.5rem;
+  }
+
+  .nav__list {
+    margin-left: auto;
+    flex-direction: row;
+    column-gap: 4.5rem;
+  }
+}
+
+@media (min-width: 1152px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .home__container {
+    grid-template-columns: 460px 650px;
+    align-items: center;
+    z-index: 5;
+  }
+
+  .home__description {
+    font-size: var(--h3-font-size);
+    margin-bottom: 3rex;
+  }
+}
+
+/* For taller devices */
+@media screen and (min-width: 376px) and (min-height: 800px) {
+  .home__container {
+    padding-top: 10rem;
+  }
+}
+
+/* For medium devices */
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    gap: .75rem;
+    height: fit-content;
+    padding: 2rem;
+  }
+
+  .home {
+    padding-top: 150px;
+  }
+
+  .home-title {
+    font-size: 6rem;
+  }
+
+  :target {
+    scroll-margin-top: 150px;
+  }
+}
+
+/* For small devices */
+@media (max-width: 450px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+
+  .header__nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header__nav ul li a {
+    font-size: 1.4rem;
+  }
+
+  .home-title {
+    font-size: 4rem;
+  }
+
+  :target {
+    scroll-margin-top: 210px;
+  }
+}

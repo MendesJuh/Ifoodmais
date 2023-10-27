@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Conheça a nova cara do iFood!" />
+    <meta
+      name="keywords"
+      content="iFood, delivery de comida, restaurante online, pedido de comida, novo site"
+    />
+    <meta
+      name="author"
+      content="Joseph Matheus, Juliana Mendes e Otávio Andreas"
+    />
+    <meta name="robots" content="index, follow" />
+    <title>iFood+</title>
+    <link
+      rel="shortcut icon"
+      href="./src/images/logos/ifood-logo-red.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <a class="header__logo" href="./index.html">
+        <span>iFood+</span>
+      </a>
+
+      <nav class="header__nav">
+        <ul>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#cardapio" class="nav__link">Cardápio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#restaurantes" class="nav__link">Restaurantes</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contato" class="nav__link">Contato</a>
+          </li>
+      </nav>
+    </header>
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home">
+        <div>
+          <h1 class="home-title">Tô com fome de...</h1>
+        </div>
+        <div class="box">
+          <input type="checkbox" id="check" />
+
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Pizza, Lanches, Sushi, Veggie, etc..."
+            />
+            <label for="check" class="icon">
+              <i class="fas fa-search"></i>
+            </label>
+          </div>
+        </div>
+      </section>
+      <!--==================== CARDAPIO ====================-->
+      <section class="cardapio" id="cardapio">
+        <div class="cardapio__container container">
+          <div class="cardapio__content">
+            <h2>Pratos populares</h2>
+            <ul class="cardapio__list">
+              <li class="cardapio__item">
+                <div class="item__img">
+                  <img src="./src/images/pratos/pizza.jpg" alt="Pizza" />
+                </div>
+                <div class="item__content">
+                  <h3 class="item__title">Pizza</h3>
+                  <p class="item__description">
+                    Descubra nossas pizzas artesanais, entregues em sua porta.
+                    Ingredientes frescos e sabor inigualável. Peça agora e
+                    aproveite!
+                  </p>
+                </div>
+              </li>
+              <li class="cardapio__item">
+                <div class="item__img">
+                  <img
+                    src="./src/images/pratos/hamburguer.jpg"
+                    alt="Hambúrguer"
+                  />
+                </div>
+                <div class="item__content">
+                  <h3 class="item__title">Hambúrguer</h3>
+                  <p class="item__description">
+                    Desfrute dos nossos hambúrgueres gourmet, entregues à sua
+                    porta. Carnes suculentas, queijos derretidos e
+                    acompanhamentos deliciosos. Peça agora e sacie sua fome!
+                  </p>
+                </div>
+              </li>
+              <li class="cardapio__item">
+                <div class="item__img">
+                  <img src="./src/images/pratos/acai.jpg" alt="Açaí" />
+                </div>
+                <div class="item__content">
+                  <h3 class="item__title">Açaí</h3>
+                  <p class="item__description">
+                    Experimente nosso açaí fresco e delicioso, entregue à sua
+                    porta. Feito com frutas frescas e acompanhamentos saborosos.
+                    Peça agora e aproveite uma explosão de sabor tropical!
+                  </p>
+                </div>
+              </li>
+              <li class="cardapio__item">
+                <div class="item__img">
+                  <img src="./src/images/pratos/sushi.jpg" alt="Sushi" />
+                </div>
+                <div class="item__content">
+                  <h3 class="item__title">Sushi</h3>
+                  <p class="item__description">
+                    Satisfaça seus desejos por sushi com nossos pratos frescos e
+                    autênticos, entregues na sua casa. Ingredientes de alta
+                    qualidade e sabores únicos. Peça agora e mergulhe na
+                    culinária japonesa!
+                  </p>
+                </div>
+              </li>
+              <li class="cardapio__item">
+                <div class="item__img">
+                  <img src="./src/images/pratos/marmitas.jpeg" alt="Marmitas" />
+                </div>
+                <div class="item__content">
+                  <h3 class="item__title">Marmita</h3>
+                  <p class="item__description">
+                    Saboreie nossas marmitas caseiras, pratos cuidadosamente
+                    preparados com ingredientes frescos e nutritivos. Peça agora
+                    e desfrute de uma refeição caseira sem esforço!
+                  </p>
+                </div>
+              </li>
+              <li class="cardapio__item">
+                <div class="item__img">
+                  <img
+                    src="./src/images/pratos/refrigerantes.jpg"
+                    alt="Refrigerantes"
+                  />
+                </div>
+                <div class="item__content">
+                  <h3 class="item__title">Refrigerante</h3>
+                  <p class="item__description">
+                    Refresque-se com nossos refrigerantes gelados, entregues à
+                    sua porta. Variedade de sabores e bebidas refrescantes. Peça
+                    agora e mate sua sede com as melhores opções de bebida.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--==================== RESTAURANTES ====================-->
+      <section class="restaurantes" id="restaurantes">
+        <div class="restaurante__container container">
+          <div class="restaurante__content">
+            <h2>Conheça nossos melhores restaurantes</h2>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Nome</th>
+                  <th>Nota</th>
+                  <th>Descrição</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      src="./src/images/restaurantes/vicolonostro.jpg"
+                      width="100px"
+                      height="80px"
+                    />
+                  </td>
+                  <td>Vicolo Nostro</td>
+                  <td>10/10</td>
+                  <td>
+                    A magia do Vicolo Nostro completa-se com o ambiente
+                    encantador que recria uma viela italiana, decorado
+                    cuidadosamente por Silvana Borella Piran. A entrada possui
+                    um caminho de paralelepípedos contornado por um jardim de
+                    hortênsias naturais que guarda uma fonte da década de 40
+                    ainda em funcionamento.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="./src/images/restaurantes/oue.jpg"
+                      width="100px"
+                      height="80px"
+                    />
+                  </td>
+                  <td>OUE Sushi</td>
+                  <td>9/10</td>
+                  <td>
+                    Derrete na boca! O pi ficou apaixonado por esse, que é um
+                    sashimi de salmão. com gema de codorna e salsa trufada. O
+                    melhor é que funciona no sistema de rodízio, então dá pra
+                    repetir os favoritos à vontade. Esse é o mais famoso de
+                    todos, que é o combinado de sushi e é um show à parte!
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="./src/images/restaurantes/outerback.jpg"
+                      width="100px"
+                      height="80px"
+                    />
+                  </td>
+                  <td>Outback</td>
+                  <td>8.5/10</td>
+                  <td>
+                    Inspirado na Austrália, o restaurante enfatiza vários
+                    aspectos da cultura australiana, como esporte, pontos
+                    turísticos, paisagens icônicas, tradições e lazer. Além
+                    disso, a marca oferece uma experiência única, divertida e de
+                    altíssimo padrão que, no Brasil, ficou conhecida como
+                    #MomentoOutback.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="./src/images/restaurantes/coco-bambu.jpg"
+                      width="100px"
+                      height="80px"
+                    />
+                  </td>
+                  <td>Coco Bambu</td>
+                  <td>8.4/10</td>
+                  <td>
+                    Considerado o maior e melhor restaurante do Brasil, com
+                    especialidade em frutos do mar, o Coco Bambu possui um amplo
+                    e variado cardápio, com comidas e bebidas deliciosamente
+                    diferenciadas, feitas com ingredientes frescos da mais alta
+                    qualidade.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="./src/images/restaurantes/madero.jpg"
+                      width="100px"
+                      height="80px"
+                    />
+                  </td>
+                  <td>Madeiro</td>
+                  <td>8/10</td>
+                  <td>
+                    A carne é totalmente natural, praticamente toda alface e
+                    tomate são comprados de fazendas orgânicas no Brasil, e não
+                    são adicionados conservantes aos alimentos servidos pela
+                    Companhia.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!--==================== CONTATO ====================-->
+      <section id="contato" class="formulario" id="formulario">
+          <div class="container">
+            <h2 class="form-title">Entre em contato!</h2>
+            <form id="contactForm" action="#" method="post" onsubmit="onSubmit()">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+    </section>
+      
+
+    </main>
+    <!--==================== FOOTER ====================-->
+    <div class="footer">
+      <div class="contact-info">
+          <i class="fas fa-envelope"></i>
+          <p>Email: suporte@ifoodplus.com</p>
+      </div>
+      <div class="contact-info">
+          <i class="fas fa-phone"></i>
+          <p>Telefone: +55 (11) 123-4567</p>
+      </div>
+  </div>
+    <!--==================== MAIN JS ====================-->
+    <script type="module" src="./src/scripts/main.js"></script>
+    
+    <script>
+      function onSubmit () {
+        alert('Feedback enviado com sucesso!')
+      }
+    </script>
+  </body>
+</html>
