@@ -25,6 +25,6 @@ promovido pela empresa Ada Tech em colaboração com o iFood.
 
 # Equipe
 
-**Juliana Mendes 
-Joseph Matheus
-Otavio Andreas**
+**Juliana Mendes**
+**Joseph Matheus**
+**Otavio Andreas**
