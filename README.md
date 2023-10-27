@@ -33,6 +33,6 @@ Utilizar boas práticas de SEO para melhorar a indexação nos motores de busca.
 
 # Equipe
 
-# Juliana Mendes 
-# Joseph Matheus
-# Otavio Andreas
+Juliana Mendes 
+Joseph Matheus
+Otavio Andreas
